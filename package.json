@@ -1,0 +1,26 @@
+{
+  "name": "text-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parser.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkk2018/text-compiler.git"
+  },
+  "author": "hkk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkk2018/text-compiler/issues"
+  },
+  "homepage": "https://github.com/hkk2018/text-compiler#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.7"
+  },
+  "dependencies": {
+    "recursive-readdir": "^2.2.2",
+    "xlsx": "^0.15.2"
+  }
+}

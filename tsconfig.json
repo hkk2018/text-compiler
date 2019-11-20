@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "outDir": "./build",
+        // "target": "es2015", //comment out for older browser
+        // "strict": true, /* Enable all strict type-checking options. */
+        // "typeRoots": ["node_modules/@types/"],                       /* List of folders to include type definitions from. */
+        "types": [
+            "node"
+        ], /* Type declaration files to be included in compilation. */
+        "declaration": true, /* Generates corresponding '.d.ts' file. */
+    },
+    // "references": [
+    //     {
+    //         "path": "../shared-service",
+    //         // "prepend": true
+    //     }
+    // ],
+    // "files": [
+    //     "../globalService.ts"
+    // ],
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
