@@ -30,8 +30,10 @@ function pickoutCommentedItemDoc(text: string): { data: DocData, leftText: strin
     let cmTail = ' */\r\n'
 
     let cmHeadIndex = text.indexOf(cmHead);
-    if (cmHeadIndex < 0) return//沒有cm了就停了
-    if (cmHeadIndex === text.indexOf(cmHead + ' ')) cmHead = cmHead + ' ';//第一個找到的如果有肥版就用肥版，這樣可以去空格
+    //沒有cm了就停了
+    if (cmHeadIndex < 0) return
+    //第一個找到的如果有肥版就用肥版，這樣可以去空格，但是如果是預設格式/** */則不變，這樣才不會抓錯。
+    if (cmHeadIndex === text.indexOf(cmHead + ' ') && cmHeadIndex !== text.indexOf(cmHead + cmTail)) cmHead = cmHead + ' ';
 
     let cmStart = text.slice(text.indexOf(cmHead) + cmHead.length)
     let cmTailIndex = cmStart.indexOf(cmTail)
