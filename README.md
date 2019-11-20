@@ -15,5 +15,6 @@ node build/main.js
 
 ### Tips
 
-1. All comments with *`/** */`* for Object with let declaration or functions/methods will be exported.
-2. To export blank function def => /** */ 
+1. All comments with `/** any content here */` for Object with `let` declaration or functions/methods will be exported with its name.
+2. Thus to export name but comment: `/** */`
+
